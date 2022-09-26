@@ -5,7 +5,6 @@ import {remove} from '../store/cartSlice'
 
 const Cart = () => {
   const cartItems=useSelector((state)=>(state.cart));
-  console.log(cartItems)
   const dispatch=useDispatch();
 
   const handleRemove=(productId)=>(
