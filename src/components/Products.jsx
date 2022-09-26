@@ -14,7 +14,7 @@ const Products = () => {
 
     //get cartItems
     const cartItem = useSelector((state)=>(state.cart));
-    console.log(cartItem)
+    //console.log(cartItem)
 
     //run getProducts function--->which basically calls api;
     useEffect(()=>{
@@ -27,7 +27,7 @@ const Products = () => {
               itemPresent=true;
           }
       })
-      console.log(itemPresent)
+      //console.log(itemPresent)
       itemPresent===false?dispatch(add(product)):enqueueSnackbar('Item is already present in the Cart',{variant:'error'})
     }
   
